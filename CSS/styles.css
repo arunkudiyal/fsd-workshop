@@ -1,0 +1,30 @@
+/* CSS Selectors + CSS Specificity */ /* COMMENT */
+
+/* CSS Selectors -> Element Selector, Attribute Selector, Pseudo Selectors */
+/* selector {
+    propertyName: value
+} */
+
+h1 {
+    color: indigo;
+}
+
+#heading {
+    color: orange;
+}
+
+p {
+    color: grey;
+}
+
+h2 {
+    color: green;
+}
+
+#about-me {
+    color: yellow;
+}
+
+.color-me {
+    color: grey;
+}

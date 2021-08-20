@@ -5,16 +5,24 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>CSS Cheatsheet</title>
+     <!-- <style>
+         h2 {
+            color: indigo;
+            /* property2: value2 */
+         }
+     </style> -->
+
+     <!-- External CSS -->
      <link rel="stylesheet" href="styles.css">
  </head>
  <body>
 
-     <h1>My Website</h1>
+     <h1 id="heading" style="color: red">My Website</h1>
 
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
      tempor incididunt ut labore et dolore magna aliqua.</p>
 
-     <h2>About Me</h2>
+     <h2 id="about-me">About Me</h2>
 
      <img src="../assets//picture_1.jpeg" alt="Image - 2">
 
@@ -22,14 +30,14 @@
      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-     <span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod
-     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     <span style="color: chartreuse;">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. <span style="color: blue;">Ut enim ad minim veniam</span>,
      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
      consequat. 
 
      Cillum dolore eu fugiat nulla , pariatur:
 
-         <ul>
+         <ul class="color-me">
              <li>Excepteur sint occaecat</li>
              <ol>
                  <li>My numbered list item</li>
@@ -37,7 +45,9 @@
          </ul>
      </p>
 
-     <h2>Services</h2>
+     <h2 class="color-me">Services</h2>
+
+     <h2 id="other">Another Heading</h2>
 
      <a href="http://www.google.com">Click here to go to Google</a>
 
