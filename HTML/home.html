@@ -1,0 +1,184 @@
+<!-- html segment
+    head segment    ->  Meta/ Information about the content
+    body segment    -> COntain all your content -->
+
+<!-- Tags & Elements -->
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <!-- Heading Element (h1 to h6) -->
+        <h1>Heading One</h1>
+        <!-- <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+        <hr /> -->
+
+        Hey, my namw is Arun. <br /> This is new line
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolore cumque nemo accusamus culpa, alias minima beatae iure adipisci illo rem neque, minus cupiditate impedit. Dolor ullam perspiciatis sed excepturi, repellat error ipsa voluptatem ipsam deserunt, ea provident quae possimus?</p>
+        <hr />
+
+
+        <!-- Links & Images -->
+        <h3>Links : </h3>
+        <a href="https://www.google.com" target="_blank">click here to go to Google</a> <br />
+        
+        <a href="./second.html">click here to go to Second Page</a>
+        <hr />
+
+        <!-- Images -->
+        <h3>Images : </h3>
+
+        <!-- Link -> Absolute Link -->
+        <img src="https://raw.githubusercontent.com/arunkudiyal/fsd-batch1-innomatics/master/Project%20-%201/images/mochi.jpg" alt="An example image" />
+
+        <!-- Link -> Relative Link -->
+        <img src="../assets/picture_1.jpeg" />
+
+        <hr />
+
+        <!-- HTML List -->
+
+        <h3>Lists : </h3>
+        <!-- Ordered List (ol) -- Numbered List - Numeric Numbers -->
+        <ol type="i" >
+            <li>Item - 1</li>
+            <li>Item - 2</li>
+            <li>Item - 3</li>
+            <li>Item - 4</li>
+            <li>Item - 5</li>
+        </ol>
+
+        <!-- Un-Ordered List (ul) - Bullet Representation -->
+        <ul>
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ul>
+
+        <hr />
+
+        <!-- HTML FORMS -->
+        <h3>Forms : </h3>
+
+        <!-- Forms, div, span -->
+        <form action="myBackend.php">
+            <!-- Fisrt Name -->
+            <div style="margin-bottom: 15px;">
+                <label>First Name : </label>
+                <input type="text" placeholder="Enter your first name" >
+            </div>
+
+            <!-- Last Name -->
+            <div style="margin-bottom: 15px;">
+                <label>Last Name : </label>
+                <input type="text" placeholder="Enter your last name" >
+            </div>
+
+            <!-- Email -->
+            <div style="margin-bottom: 15px;">
+                <label>Email : </label>
+                <input type="email" placeholder="Enter your email" >
+            </div>
+
+            <!-- Password -->
+            <div style="margin-bottom: 15px;">
+                <label>Password : </label>
+                <input type="password" placeholder="Enter your password" >
+            </div>
+
+            <!-- DOB -->
+            <div style="margin-bottom: 15px;">
+                <label>Enter yor DOB</label>
+                <input type="date" name="" id="">
+            </div>
+
+            <!-- Gender -->
+            <div style="margin-bottom: 15px;">
+                <label>Gender : </label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+
+                <!-- <label>Male</label>
+                <input type="radio" value="Male">
+                <label>Female</label>
+                <input type="radio" value="Female">
+                <label>Others</label>
+                <input type="radio" value="Others"> -->
+            </div>
+
+            <!-- Feedback -->
+            <div style="margin-bottom: 15px;">
+                <label>Feedback : </label>
+                <textarea cols="70" rows="10"></textarea>
+            </div>
+
+            <!-- Pdf file -->
+            <div style="margin-bottom: 15px;">
+                <label>Upload your latest resume : </label>
+                <input type="file">
+            </div>
+
+            <!-- Submit -->
+            <div style="margin-bottom: 15px;">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+        <hr />
+
+        <!-- Videos -->
+        <h3>Videos : </h3>
+        <video src="../assets/7. Component Creation Lifecycle in Action.mp4" controls poster="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" ></video>
+
+        <hr />
+
+        <!-- YouTube Videos -->
+        <h3>YouTube Videos : </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-dOD38I65iM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr />
+
+        <!-- Google Maps -->
+        <h3>Google Maps</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1939114032066!2d78.3879663155492!3d17.498254488012247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs%20-%20Data%20science%20%26%20Big%20data%20EduTech%20Company-Hyderabad!5e0!3m2!1sen!2sin!4v1629436649531!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <hr />
+
+        <!-- Tables -->
+        <h3>Tables : </h3>
+        <table border="1">
+            <thead>
+                <th>Emp. Name</th>
+                <th>Emp. Email</th>
+                <th>Emp. Age</th>
+                <th>Emp. Designation</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tim Cook</td>
+                    <td>tim@apple.com</td>
+                    <td>52</td>
+                    <td>CEO</td>
+                </tr>
+                <tr>
+                    <td>Creg</td>
+                    <td>fed_creg@apple.com</td>
+                    <td>40</td>
+                    <td>VP - SDE</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="height: 300px;"></div>
+    </body>
+</html>
