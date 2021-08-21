@@ -5,26 +5,97 @@
     propertyName: value
 } */
 
+body {
+    background: linear-gradient(30deg, rgba(43, 88, 133, 1), rgba(238, 255, 3, 0.4));
+}
+
+/* Selectors */
+
+/* Element Selector */
 h1 {
     color: indigo;
 }
 
-#heading {
-    color: orange;
-}
-
-p {
-    color: grey;
-}
-
-h2 {
+.subtitle {
     color: green;
 }
 
-#about-me {
-    color: yellow;
+/* PSEUDO SELECTORS - Give you a way to access few default actions & relations to an element */
+/* h2:hover {
+    color: red;
+} */
+
+/* .ordered:first-child {
+    color: red;
+} */
+
+/* .ordered:last-child {
+    color: yellow
 }
 
-.color-me {
-    color: grey;
+.ordered:nth-child(2) {
+    color: coral;
+}
+
+.ordered:first-child:hover {
+    color: red;
+}
+
+#google-link-1 {
+    text-decoration: none;
+}
+
+#google-link-1:visited {
+    color: black;
+} */
+
+
+/* ATTRIBUTE SELECTORS */
+/* $ -> ends-with */
+/* * -> starts with */
+/* /* -> Should contain */
+
+/* img[src$=".jpeg"] {
+    border: 5px solid yellow;
+} */
+
+/* img[src*="../assets"] {
+    border: 5px solid yellow;
+} */
+
+/* img[src/*="cnalnc"] */
+
+/* p[class="subtitle"] {
+    color: black
+} */
+
+
+
+/* COLORS */
+
+
+/* #container-one {
+    height: 300px;
+    width: 70vw;
+    background-color: #ffb0fa;
+} */
+
+
+/* GRADIENTS */
+
+/* Liner Gradient */
+#container-one {
+    height: 300px;
+    width: 70vw;
+    /* liner-gradient(direction, firstColor, secondColor) */
+    /* background: linear-gradient(30deg, rgb(58, 150, 242), rgb(238, 255, 3), green, black, red); */
+
+    background: linear-gradient(to right, rgba(237, 111, 100, 1), rgba(237, 111, 100, 0))
+}
+
+#container-two {
+    height: 300px;
+    width: 70%;
+
+    background: radial-gradient(circle, black, red, yellow, green, blue, pink, purple, olive, orange, magenta, white)
 }
