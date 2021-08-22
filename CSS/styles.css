@@ -4,9 +4,16 @@
 /* selector {
     propertyName: value
 } */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 body {
     background: linear-gradient(30deg, rgba(43, 88, 133, 1), rgba(238, 255, 3, 0.4));
+
+    /* background: url('') */
+
+    /* font-family: ImportedFont, safeFont */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 /* Selectors */
@@ -14,10 +21,14 @@ body {
 /* Element Selector */
 h1 {
     color: indigo;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .subtitle {
     color: green;
+    font-weight: 600px;
 }
 
 /* PSEUDO SELECTORS - Give you a way to access few default actions & relations to an element */
@@ -90,7 +101,9 @@ h1 {
     /* liner-gradient(direction, firstColor, secondColor) */
     /* background: linear-gradient(30deg, rgb(58, 150, 242), rgb(238, 255, 3), green, black, red); */
 
-    background: linear-gradient(to right, rgba(237, 111, 100, 1), rgba(237, 111, 100, 0))
+    /* background: linear-gradient(to right, rgba(237, 111, 100, 1), rgba(237, 111, 100, 0)) */
+
+    /* background: url('') */
 }
 
 #container-two {
@@ -98,4 +111,100 @@ h1 {
     width: 70%;
 
     background: radial-gradient(circle, black, red, yellow, green, blue, pink, purple, olive, orange, magenta, white)
+}
+
+#container-three {
+    height: 300px;
+    width: 80%;
+    background-color: rgba(173, 14, 27, 1);
+}
+
+#container-four {
+    height: 300px;
+    width: 80%;
+    background-color: rgba(173, 14, 27, 0.6);
+}
+
+
+/* BOX MODEL */
+
+img {
+    /* border: width style color */
+    /* border: 5px solid navy; */
+    /* padding: 10px;
+    margin: 20px; */
+
+    /* padding: x px y px; --> Top-Bottom Left-Right */
+    /* padding: x px y px z px a px --> Top Right Bottom Left */
+    /* padding: x px; --> All the 4 directions */
+
+    /* padding: 5px 10px; */
+    /* padding: 5px 10px 15px 20px; */
+
+    /* padding: 10px;
+    margin-left: 20px; */
+}
+
+#img-two, #img-two {
+    border: 5px solid navy;
+    margin-top: 15px;;
+}
+
+
+/* FLEXBOX */
+.container {
+    background-color: rgb(256, 256, 256);
+    padding: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-item {
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    margin: 10px;
+}
+
+
+/* NAV BAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: grey;
+} 
+
+button {
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
